@@ -1,0 +1,27 @@
+1. #Python Programs for Bubble Sort and Insertion Sort
+Given the following elements 10, 7, 26, 43, 3, 13, 11
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+# Test the bubble sort function
+elements = [10, 7, 26, 43, 3, 13, 11]
+sorted_elements_bubble = bubble_sort(elements.copy())
+print("Bubble Sort:", sorted_elements_bubble)
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+# Test the bubble sort function
+elements = [10, 7, 26, 43, 3, 13, 11]
+sorted_elements_bubble = bubble_sort(elements.copy())
+print("Bubble Sort:", sorted_elements_bubble)
